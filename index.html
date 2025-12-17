@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>First web</title>
+    <!-- CSS EXTERNAL -->
+    <link rel="stylesheet" href="/css/style.css" />
+
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- HEADER -->
+    <header class="main-header text-white bg-black sticky top-0 z-50 w-full">
+      <div
+        class="max-w-7xl mx-auto px-4 sm:px-8 py-4 sm:py-4 flex sm:justify-between items-center"
+      >
+        <!-- LOGO -->
+        <div id="logo" class="hidden sm:flex items-center w-10 h-10"></div>
+
+        <!-- NAVBAR -->
+        <nav
+          class="flex gap-3 sm:gap-4 md:gap-6 font-semibold text-xs sm:text-sm md:text-base mx-auto sm:mx-0"
+        >
+          <a href="#home-page" class="hover:underline">Home</a>
+          <a href="#profile" class="hover:underline">Profile</a>
+          <a href="#portofolio" class="hover:underline">Portofolio</a>
+          <a href="#message-us" class="hover:underline">Message Us</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main pt-16 md:pt-0">
+      <!-- HOME -->
+      <section id="home-page" class="min-h-[700px] mt-10 sm:mt-16 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid">
+          <h1
+            class="text-5xl sm:text-6xl md:text-7xl lg:text-[84px] font-bold py-[16px]"
+            style="color: #000000"
+          >
+            Hi <span id="username"></span>,<br />
+            Welcome To Website!
+          </h1>
+          <p
+            class="text-lg sm:text-base md:text-lg lg:text-[20px] font-medium"
+            style="color: #000000"
+          >
+            This is my first website, give me your feedback!
+          </p>
+        </div>
+      </section>
+
+      <!-- PROFILE -->
+      <section id="profile" class="min-h-[730px] mt-10 sm:mt-16 scroll-mt-25">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+          <header>
+            <h1
+              class="text-center sm:flex text-3xl sm:text-3xl md:text-3xl lg:text-[44px] font-bold"
+            >
+              About Us
+            </h1>
+          </header>   
+            <div class="gap-4">
+              <p class="mt-6 items-center text-center sm:text-left mx-auto sm:mx-0 text-sm sm:text-base md:text-lg lg:text-[20px] font-medium">
+                Farell Company is a company engaged in the field of web
+                development. We have been established since 2020 and have
+                provided services to various clients both domestically and
+                internationally. Our team consists of experienced and skilled
+                professionals in their fields, ready to help you realize your
+                web development needs.
+              </p>
+
+            </div>
+          
+        <div class="max-w-7xl mx-auto mt-10">
+          <header>
+            <h1
+              class="text-center sm:flex text-3xl sm:text-3xl md:text-3xl lg:text-[44px] font-bold"
+            >
+              Our Headquarter
+            </h1>
+          </header>
+          <div
+            class="grid grid-cols-1 sm:grid-cols-3 mt-13 gap-y-8 sm:gap-20 lg:gap-8"
+          >
+            <div class="flex flex-col items-center gap-2">
+              <div
+                class="headq w-48 h-48 sm:w-52 sm:h-52 lg:w-60 lg:h-60"
+              ></div>
+              <p class="text-center">Jakarta</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2">
+              <div
+                class="headq w-48 h-48 sm:w-52 sm:h-52 lg:w-60 lg:h-60"
+              ></div>
+              <p class="text-center">Surabaya</p>
+            </div>
+
+            <div class="flex flex-col items-center gap-2">
+              <div
+                class="headq w-48 h-48 sm:w-52 sm:h-52 lg:w-60 lg:h-60"
+              ></div>
+              <p class="text-center">Bandung</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PORTOFOLIO -->
+      <section
+        id="portofolio"
+        class="min-h-[730px] mt-10 sm:mt-16 scroll-mt-20"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+          <header>
+            <h1
+              id="portofolio-judul"
+              class="text-center text-[24px] font-bold py-[16px]"
+            >
+              Portofolio
+            </h1>
+          </header>
+        </div>
+      </section>
+
+      <!-- MESSAGE US -->
+      <section
+        id="message-us"
+        class="min-h-[600px] mt-10 sm:mt-16 scroll-mt-20"
+      >
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
+          <header>
+            <h1 class="text-center text-[24px] font-bold py-[16px]">
+              Message Us
+            </h1>
+          </header>
+          <form>
+            <label for="name-input" class="block py-[8px]">
+              Name:
+              <input
+                type="text"
+                id="name-input"
+                placeholder="Send Message"
+                class="border p-[4px] w-full"
+                required
+              />
+            </label>
+            <button
+              type="button"
+              onclick="validateForm();"
+              class="border p-[4px] mt-[8px] bg-sky-600 hover:bg-sky-700 rounded-md px-[6px]"
+              >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="w-full text-black mt-10 sm:mt-16">
+  <div class="max-w-7xl mx-auto px-4 sm:px-8 py-8">
+    <div class="text-center">
+      <p class="text-sm sm:text-base"> &copy; 2025 Farell Company. All rights reserved</p>
+    </div>
+  </div>
+</footer>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

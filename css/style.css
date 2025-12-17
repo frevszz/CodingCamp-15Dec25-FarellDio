@@ -1,0 +1,39 @@
+html {
+  scroll-behavior: smooth;
+}
+
+#logo {
+  background-color: gray;
+  background-image: url(https://picsum.photos/200);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.headq {
+  background-color: gray;
+  background-image: url(https://picsum.photos/300);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+#home-page {
+  background-color: #ffffff;
+}
+
+.main-header {
+  background-color: #000000;
+}
+
+#portofolio {
+  background-color: #ffffff;
+}
+
+#portofolio-judul {
+  color: white;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
