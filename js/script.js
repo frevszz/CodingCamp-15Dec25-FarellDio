@@ -3,10 +3,10 @@ console.log("Hello World!");
 greet();
 
 ///Greet the user
-/*function greet() {
+function greet() {
   let username = prompt("Please enter your name!");
   document.getElementById("username").innerText = username;
-}*/
+}
 
 /// Validate Form
 function validateForm() {
