@@ -18,7 +18,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
       rel="stylesheet"
     />
-  </head>
+  </head> 
 
   <body>
     <!-- HEADER -->
@@ -35,7 +35,6 @@
         >
           <a href="#home-page" class="hover:underline">Home</a>
           <a href="#profile" class="hover:underline">Profile</a>
-          <a href="#portofolio" class="hover:underline">Portofolio</a>
           <a href="#message-us" class="hover:underline">Message Us</a>
         </nav>
       </div>
@@ -44,8 +43,8 @@
     <!-- MAIN CONTENT -->
     <main class="main pt-16 md:pt-0">
       <!-- HOME -->
-      <section id="home-page" class="min-h-[700px] mt-10 sm:mt-16 scroll-mt-20">
-        <div class="max-w-7xl mx-auto px-4 sm:px-8 grid">
+      <section id="home-page" class="mb-15 mt-10 sm:mt-16 scroll-mt-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-8">
           <h1
             class="text-5xl sm:text-6xl md:text-7xl lg:text-[84px] font-bold py-[16px]"
             style="color: #000000"
@@ -59,6 +58,11 @@
           >
             This is my first website, give me your feedback!
           </p>
+        
+
+        <div class="mt-10 w-full aspect-[4/3] h-[35vh] min-h-[200px] max-h-[320px]
+             bg-[url('https://picsum.photos/1200/400')]
+             bg-cover bg-center rounded-lg"></div>
         </div>
       </section>
 
@@ -71,23 +75,59 @@
             >
               About Us
             </h1>
-          </header>   
-            <div class="gap-4">
-              <p class="mt-6 items-center text-center sm:text-left mx-auto sm:mx-0 text-sm sm:text-base md:text-lg lg:text-[20px] font-medium">
-                Farell Company is a company engaged in the field of web
-                development. We have been established since 2020 and have
-                provided services to various clients both domestically and
-                internationally. Our team consists of experienced and skilled
-                professionals in their fields, ready to help you realize your
-                web development needs.
-              </p>
+          </header>
+          <div class="gap-4">
+            <p
+              class="mt-6 items-center text-center sm:text-left mx-auto sm:mx-0 text-sm sm:text-base md:text-lg lg:text-[20px] font-medium"
+            >
+              Farell Company is a company engaged in the field of web
+              development. We have been established since 2020 and have provided
+              services to various clients both domestically and internationally.
+              Our team consists of experienced and skilled professionals in
+              their fields, ready to help you realize your web development
+              needs.
+            </p>
+          </div>
+        </div>
 
-            </div>
-          
-        <div class="max-w-7xl mx-auto mt-10">
+        <div class="max-w-7xl mx-auto px-4 mt-10 sm:px-8">
           <header>
             <h1
               class="text-center sm:flex text-3xl sm:text-3xl md:text-3xl lg:text-[44px] font-bold"
+            >
+              Vision
+            </h1>
+          </header>
+          <div class="gap-4">
+            <p
+              class="mt-6 items-center text-center sm:text-left mx-auto sm:mx-0 text-sm sm:text-base md:text-lg lg:text-[20px] font-medium"
+            >
+              To become a trusted and innovative digital technology company that
+              delivers high-quality website and application solutions,
+              empowering businesses and organizations to grow in the digital
+              era.
+            </p>
+
+            <header>
+            <h1
+              class="text-center sm:flex text-3xl sm:text-3xl md:text-3xl lg:text-[44px] font-bold mt-10"
+            >
+              Mission 
+            </h1>
+          </header>
+          <div class="gap-4">
+            <p
+              class="mt-6 items-center text-center sm:text-left mx-auto sm:mx-0 text-sm sm:text-base md:text-lg lg:text-[20px] font-medium"
+            >
+              To deliver reliable and user-friendly digital solutions using modern technology.
+              To prioritize quality, innovation, and performance in every project.
+              To build professional and transparent relationships with clients.
+            </p>
+          </div>
+       
+          <header>
+            <h1
+              class="text-center md:text-left text-3xl sm:text-3xl md:text-3xl lg:text-[44px] font-bold mt-10"
             >
               Our Headquarter
             </h1>
@@ -119,66 +159,105 @@
         </div>
       </section>
 
-      <!-- PORTOFOLIO -->
-      <section
-        id="portofolio"
-        class="min-h-[730px] mt-10 sm:mt-16 scroll-mt-20"
-      >
-        <div class="max-w-7xl mx-auto px-4 sm:px-8">
-          <header>
-            <h1
-              id="portofolio-judul"
-              class="text-center text-[24px] font-bold py-[16px]"
-            >
-              Portofolio
-            </h1>
-          </header>
-        </div>
-      </section>
-
       <!-- MESSAGE US -->
       <section
-        id="message-us"
-        class="min-h-[600px] mt-10 sm:mt-16 scroll-mt-20"
+      id="message-us"
+      class="min-h-[600px] mt-10 sm:mt-16 scroll-mt-20"
       >
-        <div class="max-w-7xl mx-auto px-4 sm:px-8">
-          <header>
-            <h1 class="text-center text-[24px] font-bold py-[16px]">
-              Message Us
-            </h1>
-          </header>
-          <form>
-            <label for="name-input" class="block py-[8px]">
-              Name:
-              <input
-                type="text"
-                id="name-input"
-                placeholder="Send Message"
-                class="border p-[4px] w-full"
-                required
-              />
-            </label>
-            <button
-              type="button"
-              onclick="validateForm();"
-              class="border p-[4px] mt-[8px] bg-sky-600 hover:bg-sky-700 rounded-md px-[6px]"
-              >
-              Send Message
-            </button>
-          </form>
-        </div>
-      </section>
-    </main>
+      <div class="max-w-7xl mx-auto px-4 sm:px-8">
+        <header>
+          <h1 class="text-center text-[24px] font-bold py-[16px]">
+           Message Us
+          </h1>
+        </header>
 
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start"> 
+      <!-- FORM -->
+      <div class="bg-gray-100 p-6 rounded-lg">
+        <form class="space-y-4">
+          
+          <label class="block">
+            Name:
+            <input
+              type="text"
+              id="name-input"
+              placeholder="Nama"
+              class="border p-2 w-full rounded-md"
+              required
+            />
+          </label>
+
+          <label class="block">
+            Tanggal Lahir:
+            <input
+              type="date"
+              id="date-input"
+              class="border p-2 w-full rounded-md"
+              required
+            />
+          </label>
+
+          <div>
+            <p class="mb-1">Jenis Kelamin:</p>
+            <div class="flex gap-4">
+              <label class="flex items-center gap-1">
+                <input type="radio" name="gender" name="gender" value="Laki-Laki">
+                Laki-Laki
+              </label>
+              <label class="flex items-center gap-1">
+                <input type="radio" name="gender" name="gender" value="Perempuan">
+                Perempuan
+              </label>
+            </div>
+          </div>
+
+          <label class="block">
+            Message:
+            <textarea
+              rows="4"
+              placeholder="Pesan"
+              id="message-input"
+              class="border p-2 w-full rounded-md"
+              required
+            ></textarea>
+          </label>
+
+          <button
+            type="button"
+            onclick= "submitForm()"
+            class="bg-black text-white rounded-md px-5 py-2 hover:opacity-90 transition"
+            >
+            Submit
+          </button>
+
+        </form>
+      </div>
+
+      <!-- OUTPUT -->
+      <div id="output" class="bg-gray-100 p-6 rounded-lg min-h-[260px]">
+        <p class="font-semibold mb-3" id="current-time">Current time :</p>
+        <p><strong>Nama :</strong> <span id="out-name">-</span></p>
+        <p><strong>Tanggal Lahir :</strong> <span id="out-date">-</span></p>
+        <p><strong>Jenis Kelamin :</strong> <span id="out-gender">-</span></p>
+        <p><strong>Pesan :</strong> <span id="out-message">-</span></p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    </main>
 
     <!-- FOOTER -->
     <footer class="w-full text-black mt-10 sm:mt-16">
-  <div class="max-w-7xl mx-auto px-4 sm:px-8 py-8">
-    <div class="text-center">
-      <p class="text-sm sm:text-base"> &copy; 2025 Farell Company. All rights reserved</p>
-    </div>
-  </div>
-</footer>
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-8">
+        <div class="text-center">
+          <p class="text-sm sm:text-base">
+            &copy; 2025 Farell Company. All rights reserved
+          </p>
+        </div>
+      </div>
+    </footer>
 
     <script src="/js/script.js"></script>
   </body>
