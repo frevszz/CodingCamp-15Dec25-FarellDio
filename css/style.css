@@ -2,14 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-#logo {
-  background-color: gray;
-  background-image: url("../assets/LOGO.png");
-  background-size: cover;
-  background-position: center;
-  border-radius: 50%;
-}
-
 #home-page {
   background-color: #ffffff;
 }
